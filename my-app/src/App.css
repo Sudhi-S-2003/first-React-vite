@@ -1,0 +1,105 @@
+.navbar{
+  background-color: aqua;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom:10px;
+}
+.navbar ul{
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-evenly;
+}
+.navbar ul li{
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.navbar .logo{
+  margin-top: -30px;
+  margin-left: 20px;
+  height: 125%;
+}
+.navbar .logo img{
+  height: 125%;
+}
+
+.App{
+  width: 50%;
+  margin: 0 auto;
+  background-color:#fff;
+  padding: 30px;
+  max-width: 550px;
+  min-width: 280px;
+  margin-top: 10px;
+  flex: 50%;
+}
+.App h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-field{
+  display: flex;
+
+}
+
+.form-field input{
+  flex-basis: 75%;
+  padding: 7px;
+  padding-left:15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+.App button{
+  background-color: blue;
+  color: #fff;
+  padding: 7px;
+  width: 75%;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  display: block;
+}
+body{
+  background: #f0f2f5;
+}
+.content-container{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 13%;
+  justify-content: space-around;
+  padding: 25px;
+}
+.content-container .left{
+  flex:50%;
+
+}.content-container .left h1{
+  color: #0866ff;
+}
+.content-container .left h2{
+  font-size: 30px;
+  line-height: 40px;
+
+}
+.line{
+  width: 100%;
+  border-top: 2px dashed #0866ff; 
+  margin: 20px 0;
+}
+
+
+@media (max-width:500px) {
+  .form-field{
+    flex-direction: column;
+    }
+    .form-field label{
+      text-align: center;
+      flex:1;
+    }
+}
